@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>furniture</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
 </head>
@@ -13,19 +17,19 @@
     <header class="header" id="header">
         <nav class="nav container">
             <a href="#" class="nav-logo">
-                <i class="bx bxs-watch nav-logo-icon"></i> Beddies
+                <i class='bx bx-bed' ></i> Beddies
             </a>
 
             <div class="nav-menu" id="nav-menu">
                 <ul class="nav-list">
                     <li class="nav-item">
-                        <a href="#home" class="nav-link">Home</a>
+                        <a href="#home" class="nav-link active-link">Home</a>
                     </li>
                     <li class="nav-item">
                         <a href="#featured" class="nav-link">Featured</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#product" class="nav-link">Product</a>
+                        <a href="#products" class="nav-link">Product</a>
                     </li>
                     <li class="nav-item">
                         <a href="#new" class="nav-link">New</a>
@@ -104,7 +108,7 @@
                         sale
                     </div>
 
-                    <img src="/image/chair-1.png" alt="" class="featured-img">
+                    <img src="/image/couch-5.png" alt= class="featured-img">
 
                     <div class="featured-data">
                         <h3 class="featured-title">Inglewood</h3>
@@ -240,9 +244,251 @@
                 </article>
             </div>
         </section>
+
+        <section class="testimonial container section">
+            <div class="testimonial-container grid">
+                <div class="swiper testimonial-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="testimonial-card swiper-slide">
+                            <div class="testimonial-quote">
+                                <i class="bx bxs-quote-alt-left"></i>
+                            </div>
+
+                            <p class="testimonial-description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero reiciendis illo, culpa placeat expedita, deleniti minus dignissimos nisi odio harum esse reprehenderit quia quibusdam tenetur consequuntur libero ut rerum id!
+                            </p>
+
+                            <h3 class="testimonial-date">March 25, 2022</h3>
+
+                            <div class="testimonial-perfil">
+                                <img src="/image/user1.jpg" alt="" class="testimonial-perfil-img">
+
+                                <div class="testimonial-perfil-data">
+                                    <span class="testimonial-perfil-name">Frank Kalin</span>
+                                    <span class="testimonial-perfil-detail">Director of a company</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial-card swiper-slide">
+                            <div class="testimonial-quote">
+                                <i class="bx bxs-quote-alt-left"></i>
+                            </div>
+
+                            <p class="testimonial-description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero reiciendis illo, culpa placeat expedita, deleniti minus dignissimos nisi odio harum esse reprehenderit quia quibusdam tenetur consequuntur libero ut rerum id!
+                            </p>
+
+                            <h3 class="testimonial-date">March 25, 2022</h3>
+
+                            <div class="testimonial-perfil">
+                                <img src="/image/user2.jpg" alt="" class="testimonial-perfil-img">
+
+                                <div class="testimonial-perfil-data">
+                                    <span class="testimonial-perfil-name">Leon Dream</span>
+                                    <span class="testimonial-perfil-detail">Director of a company</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial-card swiper-slide">
+                            <div class="testimonial-quote">
+                                <i class="bx bxs-quote-alt-left"></i>
+                            </div>
+
+                            <p class="testimonial-description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero reiciendis illo, culpa placeat expedita, deleniti minus dignissimos nisi odio harum esse reprehenderit quia quibusdam tenetur consequuntur libero ut rerum id!
+                            </p>
+
+                            <h3 class="testimonial-date">March 25, 2022</h3>
+
+                            <div class="testimonial-perfil">
+                                <img src="/image/user3.jpg" alt="" class="testimonial-perfil-img">
+
+                                <div class="testimonial-perfil-data">
+                                    <span class="testimonial-perfil-name">Lou Rome</span>
+                                    <span class="testimonial-perfil-detail">Director of a company</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-button-next">
+                        <i class='bx bx-right-arrow-alt'></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <i class='bx bx-left-arrow-alt' ></i>
+                    </div> 
+                </div>
+
+
+                <div class="testimonial-imgs">
+                    <div class="testimonial-square"></div>
+                    <img src="/image/testimonial.jpg" alt="" class="testimonial-img">
+                </div>
+            </div>
+        </section>
+
+        <section class="new section container" id="new">
+            <h2 class="section-title">
+                new Arrival
+            </h2>
+
+            <div class="new-container">
+                <div class="swiper new-swiper">
+                    <div class="swiper-wrapper">
+                        <article class="new-card swiper-slide">
+                            <span class="new-tag">New</span>
+
+                            <img src="/image/chair-0.png" alt="" class="new-img">
+
+                            <div class="new-data">
+                                <h3 class="new-title">Realeth</h3>
+                                <span class="new-price">$634</span>
+                            </div>
+
+                            <button class="button new-button">ADD TO CART</button>
+                        </article>
+
+                        <article class="new-card swiper-slide">
+                            <span class="new-tag">New</span>
+
+                            <img src="/image/chair-2.png" alt="" class="new-img">
+
+                            <div class="new-data">
+                                <h3 class="new-title">Portano</h3>
+                                <span class="new-price">$235</span>
+                            </div>
+
+                            <button class="button new-button">ADD TO CART</button>
+                        </article>
+
+                        <article class="new-card swiper-slide">
+                            <span class="new-tag">New</span>
+
+                            <img src="/image/chair-9.png" alt="" class="new-img">
+
+                            <div class="new-data">
+                                <h3 class="new-title">Poloski</h3>
+                                <span class="new-price">$1342</span>
+                            </div>
+
+                            <button class="button new-button">ADD TO CART</button>
+                        </article>
+
+                        <article class="new-card swiper-slide">
+                            <span class="new-tag">New</span>
+
+                            <img src="/image/chair-01.png" alt="" class="new-img">
+
+                            <div class="new-data">
+                                <h3 class="new-title">Gerkai</h3>
+                                <span class="new-price">$1222</span>
+                            </div>
+
+                            <button class="button new-button">ADD TO CART</button>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter section container">
+            <div class="newsletter-bg grid">
+                <div>
+                    <h2 class="newsletter-title">
+                        Subscribe to our <br> Newsletter
+                    </h2>
+
+                    <p class="newsletter-description">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo perferendis magnam quaerat quia deserunt eveniet maiores, quisquam exercitationem repellat expedita, esse dolore! Officiis, optio itaque quis harum atque qui vel.
+                    </p>
+                </div>
+
+                <form action="" class="newsletter-subscribe">
+                    <input type="email" name="" class="newsletter-input" placeholder="Enter your email">
+
+                    <button class="button">SUBSCRIBE</button>
+                </form>
+            </div>
+        </section>
     </main>
 
+    <footer class="footer section">
+        <div class="footer-container container grid">
+            <div class="footer-content">
+                <h3 class="footer-title">Our Information</h3>
 
+                <ul class="footer-list">
+                    <li>234 - Lagos</li>
+                    <li>Benche Ikoyi 2378</li>
+                    <li>123-456-789</li>
+                </ul>
+            </div>
+
+            <div class="footer-content">
+                <h3 class="footer-title">About Us</h3>
+
+                <ul class="footer-links">
+                    <li>
+                        <a href="#" class="footer-link">Support Center</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Customer Support</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Copyright</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-content">
+                <h3 class="footer-title">Product</h3>
+
+                <ul class="footer-links">
+                    <li>
+                        <a href="#" class="footer-link">Road bikes</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Mountain dash</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Hydro electric</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Accesories</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-content">
+                <h3 class="footer-title">Social</h3>
+
+                <ul class="footer-social">
+                    <a href="www.facebook.com" target="_blank" class="footer-social-link">
+                        <i class="bx bxl-facebook"></i>
+                    </a>
+                    <a href="www.twitter.com" target="_blank" class="footer-social-link">
+                        <i class="bx bxl-twitter"></i>
+                    </a>
+                    <a href="www.instagram.com" target="_blank" class="footer-social-link">
+                        <i class="bx bxl-instagram"></i>
+                    </a>
+                </ul>
+            </div>
+        </div>
+
+        <span class="footer-copy">&#169; sakaaa</span>
+    </footer>
+
+    <a href="#" class="scroll-up" id="scroll-up">
+        <i class="bx bx-up-arrow-alt scroll-up-icon"></i>
+    </a>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="app.js"></script>
 </body>
 </html>
