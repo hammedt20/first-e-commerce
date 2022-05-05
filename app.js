@@ -4,7 +4,12 @@ const navMenu = document.querySelector('.nav-menu'),
     navLink = document.querySelectorAll('.nav-link'),
     header = document.querySelector('.header'),
     sections = document.querySelectorAll(`#home,#featured,#products,#new`),
-    scrollUp = document.querySelector('#scroll-up');
+    scrollUp = document.querySelector('#scroll-up'),
+    themeButton= document.querySelector("#theme-button"),
+    darkTheme = 'dark-theme',
+    iconTheme = 'bx-sun',
+    selectedTheme = localStorage.getItem('selected-theme'),
+    selectedIcon = localStorage.getItem('selected-icon');
 
 
 if(navToggle){
@@ -59,6 +64,45 @@ function scrollActive(){
 
 window.addEventListener('scroll', scrollActive);
 
+
+const cart = document.querySelector('#cart'),
+    cartShop = document.querySelector('#cart-shop'),
+    cartClose = document.querySelector('.cart-close');
+
+
+if(cartShop){
+    cartShop.addEventListener('click', () => {
+        cart.classList.add('show-cart');
+    })
+}
+
+if(cartClose){
+    cartClose.addEventListener('click', () => {
+        cart.classList.remove('show-cart');
+    })
+}
+
+// dark theme algo
+
+// we obtain the current theme that the interface has by validating the dark theme class
+const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light';
+const getCurrentIcon = () => document.body.classList.contains(iconTheme) ? 'bx-moon bx' : 'bx bx-sun';
+
+// we validate if the user previously chose a topic 
+if(selectedTheme){
+    document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme);
+    themeButton.classList[selectedIcon === 'bx-moon bx' ? 'add' : 'remove'](iconTheme);
+}
+
+// activate / deactivate the theme button
+themeButton.addEventListener('click', () => {
+    document.body.classList.toggle(darkTheme);
+    themeButton.classList.toggle(iconTheme);
+
+    // we save the theme and icon the current user chose 
+    localStorage.setItem('selected-theme', getCurrentTheme());
+    localStorage.setItem('selected-icon', getCurrentIcon());
+})
 
 var testimonialSwiper = new Swiper(".testimonial-swiper", {
     spaceBetween: 30,
